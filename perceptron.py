@@ -123,7 +123,7 @@ if __name__ == '__main__':
     # 打印训练获得的权重
     print (and_perceptron)
     # 测试
-    print ('1 and 1 = %s' % and_perceptron.predict([1, 1])) 
-    print ('0 and 0 = %s' % and_perceptron.predict([0, 0]))
-    print ('1 and 0 = %s' % and_perceptron.predict([1, 0]))
-    print ('0 and 1 = %s' % and_perceptron.predict([0, 1]))
+    print ('1 and 1 = %d' % and_perceptron.predict([1, 1])) 
+    print ('0 and 0 = %d' % and_perceptron.predict([0, 0]))
+    print ('1 and 0 = %d' % and_perceptron.predict([1, 0]))
+    print ('0 and 1 = %d' % and_perceptron.predict([0, 1]))
