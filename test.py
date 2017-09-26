@@ -5,6 +5,10 @@
 #  * @DateTime:    2017-07-25 13:51:39
 #  * @Description: Description
 #  */
+
+import matplotlib.pyplot as plt
+from numpy import *
+
 class Connection(object):
 	def __init__(self, upstream_node, downstream_node):
 		'''
@@ -31,7 +35,16 @@ def f():
 		for upstream_node in self.layers[layer].nodes
 		for downstream_node in self.layers[layer + 1].nodes[:-1]]
 	pass
+
+def mat():
+	fig = plt.figure()
+	ax = fig.add_subplot(111)
+	x = [1,2,3]
+	y = [2,3,6]
+	ax.plot(x,y)
+	plt.show()
+	pass
 if __name__ == '__main__':
-	f()
+	mat()
 
 
